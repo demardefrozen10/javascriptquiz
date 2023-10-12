@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <title>TTC Quiz</title>
+    <style>
+        body {
+            margin: 1rem auto;
+            padding: 3rem;
+            font-family: sans-serif;
+        }
+        header {
+            width: 50%;
+            margin: 1em auto;
+        }
+        main {
+            min-width: 25rem;
+            max-width: 50%;
+            margin: 0px auto;
+            display:flex; 
+            flex-direction: column;
+        }
+        #statement {
+            border: 1px solid black;
+            border-radius: 0.5rem;
+            box-shadow: 5px 5px 5px gray;
+            padding: 1rem;
+            font-size: x-large;
+            text-align: center;
+            margin: 1rem 0px;
+            min-height: 2em;
+        }
+        #explanation {
+            padding: 1rem;
+            text-align: center;
+        }
+        #options {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+        #next {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+        button {
+            padding: 0.5rem;
+            font-size: medium;
+            border-radius: 5px;
+        }
+        .correct {
+            background-color: lightgreen;
+        }
+        .incorrect {
+            background-color: lightpink;
+        }
+        #ttclogo {
+            height: 100px;
+        }
+    </style>
+  </head>
+  <body>
+    <header>
+    <h1>TTC Quiz</h1>
+    <img src="https://cdn.freebiesupply.com/logos/thumbs/2x/g-03-a101-ttc-logo-logo.png" alt="TTC Logo" id="ttclogo">
+    <p>Do you know about TTC?</p>
+    <h2 id="score"></h2>
+    </header>
+
+    <main>
+    <div id="statement">
+        
+    </div>
+
+    <div id="options">
+        <button name="true" value="true" >true</button>
+        <button name="false" value="false" >false</button>
+
+    </div>
+    <div id="next">
+        <button name="nextQuestion">Next Question</button>
+    </div>
+    <div id="explanation">
+
+    </div>
+
+    </main>
+
+  </body>
+
+  <script src="myscript.js">
+  </script>
+</html>
